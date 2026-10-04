@@ -41,6 +41,12 @@ This project uses GitHub Pages and can be automatically deployed to your desired
 
 The live version is deployed at [instancepage.stuxedo.net](https://instancepage.stuxedo.net).
 
+## Previous designs
+
+This repository always holds the current Stuxedo design (v2, the tuxedo-cat logo colours). Earlier designs are preserved as their own archived repositories:
+
+- [instancepage-v1](https://github.com/Stuxedo/instancepage-v1): the original green design, live at [instancepage-v1.stuxedo.net](https://instancepage-v1.stuxedo.net/)
+
 ## License
 
 This project is open source and available for use and modification.
