@@ -5,6 +5,16 @@ All notable changes to Instance Page are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.10.23-1
+
+### Added
+
+- A Discord link preview: every page except the 404 page carries a `discord:component-embed` in its `<head>` (pre-built JSON, kept under Discord's 3,000-byte limit) showing what this server page is, in Stuxedo's colours with its icon. The Open Graph fallback is unchanged
+- A full favicon set at the site root: `favicon.ico` (16, 32 and 48 px), `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png` and `site.webmanifest`, all made from Stuxedo's own icon, and the matching tags in every page's `<head>`
+- `tests/site.sh`, which checks every embed is valid JSON under 3,000 bytes with no stray `$1`, that the 404 page has none, that the favicon files exist at the right sizes, and that every `<head>` carries the tag set
+- `.htmlvalidate.json` relaxes `valid-id` so the validator accepts the embed's required `discord:component-embed` id
+- The local dev server (`dev-server.sh` / `dev-server.bat`) serves `site.webmanifest` as `application/manifest+json`, as GitHub Pages does
+
 ## v26.10.23
 
 ### Added
