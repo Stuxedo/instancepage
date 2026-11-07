@@ -35,6 +35,14 @@ Edit the HTML files to:
 - Customize colors and styling
 - Include email signup or social links
 
+## The wrapper
+
+[`wrapper/index.html`](wrapper/index.html) is the small page each Stuxedo server's own address serves (for example
+[mixr2.servers.fi.stuxedo.net](https://mixr2.servers.fi.stuxedo.net)). It frames `https://instancepage.stuxedo.net`
+full-screen and mirrors the framed page's title. The **Deploy wrapper** workflow
+(`.github/workflows/deploy-wrapper.yml`) copies it to every server once CI passes on `main`. It's a deployment
+artefact: it isn't part of the Pages site.
+
 ## Deployment
 
 This project uses GitHub Pages and can be automatically deployed to your desired domain.
