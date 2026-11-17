@@ -5,6 +5,12 @@ All notable changes to Instance Page are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.11.17
+
+### Added
+
+- **RUNN1 (Germany) gets the wrapper too.** The Deploy wrapper workflow now also copies `wrapper/index.html` to RUNN1, the new server in Germany, and checks `https://runn1.servers.de.stuxedo.net/` serves it. RUNN1 has its own deploy key (`DEPLOY_KEY_RUNN1`), which can only write into its Stuxedo wrapper folder.
+
 ## v26.11.15-1
 
 ### Changed
